@@ -309,6 +309,26 @@ h3 {
   font-weight: 500;
   text-underline-offset: 4px;
 }
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  list-style: none;
+  margin: 0 0 1.5rem;
+  padding: 0;
+}
+.social a {
+  display: inline-block;
+  padding: .6rem 1.1rem;
+  border: 1px solid rgba(255, 255, 255, .55);
+  border-radius: var(--radius);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background .2s ease;
+}
+.social a:hover { background: rgba(255, 255, 255, .12); }
+.social-handle { font-weight: 400; opacity: .85; margin-left: .25rem; }
 .footer-copy { font-size: .95rem; opacity: .9; margin-bottom: 0 !important; }
 
 /* ---------- Responsive ---------- */
