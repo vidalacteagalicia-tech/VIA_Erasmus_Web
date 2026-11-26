@@ -274,7 +274,9 @@ h3 {
 .route-art {
   display: block;
   width: 100%;
+  height: auto;
   aspect-ratio: 2 / 1;
+  object-fit: cover;
 }
 .route-body { padding: 2rem 2rem 2.25rem; }
 .route-body h3 { margin-bottom: .75rem; }
