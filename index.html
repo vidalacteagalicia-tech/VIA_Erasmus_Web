@@ -15,9 +15,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <style>
-    .partners-logos { display: flex; flex-wrap: wrap; align-items: center; gap: 2rem; margin-top: 2rem; }
-    .partners-logos a { display: inline-block; }
-    .partners-logos img { display: block; max-width: 100%; height: 80px; width: auto; }
+    .partners-logos { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 0; margin-top: 2rem; }
+    .partners-logos a { display: block; width: 100%; }
+    .partners-logos img { display: block; width: 100%; height: auto; transform: scale(0.9); transition: transform 0.3s ease; }
+    .partners-logos a:hover img, .partners-logos a:focus-visible img { transform: scale(1); }
+    @media (prefers-reduced-motion: reduce) { .partners-logos img { transition: none; } }
     .footer-eu { display: block; max-width: 100%; height: 56px; width: auto; margin: 1rem 0; }
   </style>
 </head>
@@ -181,7 +183,7 @@
   <footer class="site-footer">
     <div class="container">
       <p class="footer-title">VIA Project</p>
-      <img class="footer-eu" src="./images/cofunded_by_eu.png" alt="Co-funded by the European Union" style="background-color: white">
+      <img class="footer-eu" src="./images/cofunded_by_eu.png" alt="Co-funded by the European Union">
       <p>Researching accessibility. Transforming heritage.</p>
       <nav aria-label="Footer">
         <a href="#top">Home</a> <span aria-hidden="true">·</span> <a href="#research">Research</a>
